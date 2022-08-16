@@ -1,0 +1,7 @@
+<h1><%= @pet.name %></h1>
+<p>Species: <%= @pet.species %></p>
+<p>Location: <%= @pet.location %></p>
+
+<p><%= link_to "Edit post", edit_pet_path(@pet) %></p>
+<p><%= link_to "Delete", destroy_pet_path(@pet), method: :delete %></p>
+<p><%= link_to "Back to list", pets_path %></p>
